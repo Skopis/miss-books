@@ -8,7 +8,8 @@ export const bookService = {
     remove,
     getEmptyBook,
     getById,
-    addReview
+    addReview,
+    addGoogleBook
 }
 
 
@@ -39,7 +40,10 @@ function addReview(bookId, reviewsObj) {
             console.log('book at the end', book)
             storageService.put(BOOKS_KEY, book)
         })
+}
 
+function addGoogleBook(bookToAdd){
+    storageService.post(BOOKS_KEY, bookToAdd)
 }
 
 function getEmptyBook() {
