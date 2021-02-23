@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    position: relative;
+    background-color: bisque;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0.5rem;
+}
+li{ 
+    padding:2px;
+}
+.book-preview-container {
+    max-width: 200px;
+    margin: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.book-preview img {
+    max-width: 150px;
+}
+
+.book-filter {
+    margin: 0 auto;
+    text-align: center;
+    margin: 1rem;
+}
+
+.book-filter label {
+    margin-left: 2rem;
+    margin-right: 0.5rem;
+}
+
+.book-filter input:last-child {
+    margin-left: 0.5rem
+}
+
+.book-details {
+    margin: 1rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    background-color: rgb(214, 151, 151);
+}
+
+.book-details :first-child {
+    align-self: flex-end;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+
+.book-details :last-child {
+    align-self: flex-start;
+    padding: 0.5rem;
+    width: fit-content;
+}
+
+.book-details img {
+    max-width: 40vh;
+}
+
+.active-link {
+    color: pink;
+}
+
+#review-text {
+    height: 150px;
+}
+
+
+.star-list:hover .star, .selected {
+    color: orange;
+}
+.star-list .star:hover~.star {
+    color: black
+}
+
+/* HELPERS */
+
+.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.clean-list {
+    list-style: none;
+}
